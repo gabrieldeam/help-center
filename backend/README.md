@@ -6,7 +6,7 @@
 Abra o terminal e crie um novo diretório para o seu projeto:
 ```
 mkdir backend
-cd meu-projeto-backend
+cd backend
 ```
 
 # Inicialize o projeto Node.js
