@@ -1,0 +1,26 @@
+<button (click)="openCreateSectionModal()">Open Create Section Modal</button>
+
+<!-- Seção para listar as seções -->
+<div class="topic-list">
+    <h2>Lista de Seções</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Tópico</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let section of sections">
+          <td>{{ section.name }}</td>
+          <td>{{ getTopicName(section.topicId) }}</td>
+          <td>
+            <button (click)="deleteSection(section._id)">Excluir</button>
+            <button (click)="openUpdateSectionModal(section)">Editar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

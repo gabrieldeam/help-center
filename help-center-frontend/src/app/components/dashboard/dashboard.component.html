@@ -1,0 +1,11 @@
+<div>
+    <h2>Nilrow Help Center</h2>
+    <button (click)="logout()">Sair</button>
+    <ul>
+      <li><a [routerLink]="['/dashboard/topics']">Criar Tópicos</a></li>
+      <li><a [routerLink]="['/dashboard/section']">Criar Seções</a></li>
+      <li><a [routerLink]="['/dashboard/articles']">Criar Artigos</a></li>
+    </ul>
+    <router-outlet></router-outlet>
+  </div>
+  

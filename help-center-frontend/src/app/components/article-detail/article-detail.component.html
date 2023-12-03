@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<div class="article-container">
+  <div class="title-article-container">
+    <img *ngIf="getTopicImage()" [src]="getTopicImage()" alt="Imagem do Tópico" class="topic-image">
+    <div>
+      <h1 class="topic-name" >{{ getTopicName(article.sectionId) }}</h1>
+      <h2 class="section-name" >{{ getSectionName(article.sectionId) }}</h2>
+    </div>
+  </div>
+  <div class="article">
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.content }}</p>
+  </div>
+  </div>
+
+  <app-footer></app-footer>

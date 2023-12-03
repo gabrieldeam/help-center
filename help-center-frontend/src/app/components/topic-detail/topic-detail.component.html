@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="topic-container">
+  <div class="title-topic-container">
+    <img *ngIf="topic.imageUrl" [src]="topic.imageUrl" alt="Imagem do Tópico" class="topic-image">
+    <h2 class="topic-name">{{ topic.name }}</h2>
+  </div>
+  <div class="section-container">
+    <div class="topic-list" *ngIf="topic">
+      <div *ngFor="let section of sections" class="topic-item">
+        <h3>{{ section.name }}</h3>
+        <ul>
+          <li *ngFor="let article of section.articles">
+            <a class="article-title" routerLink="/article/{{ article._id }}">
+              {{ article.title }}
+              <img src="assets\images\seta.svg">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

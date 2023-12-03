@@ -1,0 +1,62 @@
+.main-header {
+  background-color: #000;
+  height: auto; /* Altura automática para acomodar o conteúdo */
+}
+
+.sub-header {
+  max-width: 1440px;
+  margin: 0 auto; /* Isso centraliza a sub-header na página */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 144px; /* Adiciona a margem fixa de 144px à direita e à esquerda */
+}
+
+.logo-container img {
+  width: 170px;
+  height: 34px;
+}
+
+.menu-container a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sub-search-input {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.mobile-layout {
+  .sub-header {
+    flex-direction: column; /* Altera a direção do flex para coluna em dispositivos móveis */
+    align-items: center; /* Centraliza os itens na coluna */
+  }
+
+  .header {
+    padding: 20px;
+    height: 67px;
+  }
+
+  .logo-container img {
+    width: 113px;
+    height: 22.71px;
+    margin-top: -3px;
+  }
+
+  .menu-container {
+    margin-top: -4px;
+  }
+
+  .menu-container a {
+    font-size: 14px;
+  }
+
+}

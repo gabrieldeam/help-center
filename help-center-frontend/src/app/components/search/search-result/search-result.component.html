@@ -1,0 +1,22 @@
+
+<app-header></app-header>
+
+<div class="search-container">
+  <h2 class="title-search">Resultados da pesquisa para "{{ query }}"</h2>
+  
+  <div class="article-list">
+    <div *ngIf="searchResults.length > 0; else noResults" class="article-item">
+      <ul>
+        <li *ngFor="let article of searchResults">
+          <a routerLink="/article/{{ article._id }}">{{ article.title }}<p>{{ article.content }}</p></a>
+        </li>
+      </ul>
+    </div>
+
+    <ng-template #noResults>
+      <p>Nenhum resultado encontrado.</p>
+    </ng-template>
+  </div>
+</div>
+
+<app-footer></app-footer>

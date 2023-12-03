@@ -1,0 +1,18 @@
+<div class="topics-container">
+  <p class="topics-title">Tópicos</p>
+  <ul>
+    <li *ngFor="let topic of topics">
+      <div class="topic-item">
+        <a routerLink="/topic/{{ topic._id }}" class="topic-link">
+          <div class="topic-content">
+            <img *ngIf="topic.imageUrl" [src]="topic.imageUrl" alt="Imagem do Tópico" class="topic-image">
+            <span class="topic-name">{{ topic.name }}</span>
+            <div class="name-and-arrow">
+              <img id="iconeSeta" src="assets/images/seta.svg">
+            </div>
+          </div>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>

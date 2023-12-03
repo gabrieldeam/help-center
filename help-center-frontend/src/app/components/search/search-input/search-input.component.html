@@ -1,0 +1,8 @@
+<!-- No seu componente HTML -->
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="desktop-search">
+  <input type="text" formControlName="query" placeholder="Pesquisar no help..." />
+  <div class="vertical-line"></div>
+  <button type="submit">
+    <img src="assets/images/lupa.svg" alt="Lupa" />
+  </button>
+</form>

@@ -1,0 +1,22 @@
+<button (click)="openCreateTopicModal()">Open Create Topic Modal</button>
+
+<div class="topic-list">
+  <h2>Lista de Tópicos</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let topic of topics">
+        <td>{{ topic.name }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteTopic(topic._id, topic.imagePath ?? null)">Excluir</button>
+            <button class="btn btn-primary" (click)="openEditTopicModal(topic)">Editar</button>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,9 @@
+<p class="highlights-title">Destaques</p>
+<div class="highlights-container">
+  <div *ngFor="let article of usefulArticles" class="article-container">
+    <a class="article-item" routerLink="/article/{{ article._id }}">
+      <p class="topic-name">{{ getTopicName(article.sectionId) }}</p>
+      <h2 class="article-title">{{ article.title }}</h2>
+    </a>
+  </div>
+</div>

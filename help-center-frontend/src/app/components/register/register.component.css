@@ -1,0 +1,42 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Fundo cinza claro */
+  }
+  
+  .register-form {
+    background-color: #dcdcdc; /* Retângulo cinza um pouco mais escuro */
+    padding: 20px;
+  }
+  
+  .register-form h2 {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #FF5A21; /* Cor de fundo azul, ajuste conforme necessário */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #2980b9; /* Cor de fundo azul mais escura ao passar o mouse, ajuste conforme necessário */
+  }
+  

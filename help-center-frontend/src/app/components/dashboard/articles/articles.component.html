@@ -1,0 +1,29 @@
+<button (click)="openCreateTopicModal()">Open Create Articles Modal</button>
+
+<div class="article-list">
+    <h2>Lista de Artigos</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <!-- <th>Conteúdo</th> -->
+          <th>Seção</th>
+          <th>Tópico</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let article of articles">
+          <td>{{ article.title }}</td>
+          <!-- <td>{{ article.content }}</td> -->
+          <td>{{ getSectionName(article.sectionId) }}</td>
+          <td>{{ getTopicName(article.sectionId) }}</td>
+          <td>
+            <button (click)="deleteArticle(article._id)">Excluir</button>
+            <button (click)="openUpdateArticlesModal(article)">Editar</button>
+            <button (click)="toggleUseful(article)">Toggle Useful</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

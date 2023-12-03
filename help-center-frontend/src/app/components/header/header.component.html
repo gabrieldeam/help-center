@@ -1,0 +1,18 @@
+<header class="main-header">
+    <div class="sub-header" [ngClass]="{'mobile-layout': isMobile}">
+        <div class="header">
+            <div class="logo-container">
+                <a href="/"><img src="assets/images/logo.svg" alt="Logo"></a>
+            </div>
+            <app-search-input *ngIf="!isMobile"></app-search-input>
+            <div class="menu-container">
+                <a href="https://nilrow.com" target="_blank">NILROW</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="sub-search-input" [ngClass]="{'mobile-layout': isMobile}">
+<app-search-input *ngIf="isMobile" class="search-input"></app-search-input>
+</div>

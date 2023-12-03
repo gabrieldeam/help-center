@@ -1,0 +1,47 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Fundo cinza claro */
+}
+
+.login-form {
+  background-color: #dcdcdc; /* Retângulo cinza um pouco mais escuro */
+  padding: 20px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #FF5A21; /* Cor de fundo verde, ajuste conforme necessário */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #45a049; /* Cor de fundo verde mais escura ao passar o mouse, ajuste conforme necessário */
+}
+
+.error-message {
+  color: #ff0000; /* Cor do texto de erro */
+  margin-top: 10px;
+  margin-left: 20px;
+}
